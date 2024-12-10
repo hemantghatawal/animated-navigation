@@ -33,12 +33,12 @@ body {
   transform: translateX(200vw);
 }
 
-.overlay-slide-right{
+.overlay-slide-right {
   transition: all 0.4s ease-in-out;
   transform: translateX(0);
 }
 
-.overlay-slide-left{
+.overlay-slide-left {
   transition: all 0.8s ease-in-out;
   transform: translateX(200vw);
 }
@@ -74,11 +74,11 @@ nav li a {
   text-align: center;
 }
 
-nav li a:hover{
+nav li a:hover {
   transform: scale(1.2);
 }
 
-nav li a::before{
+nav li a::before {
   content: "";
   width: 25vw;
   height: 3px;
@@ -89,7 +89,7 @@ nav li a::before{
   opacity: 0;
 }
 
-nav li a:hover::before{
+nav li a:hover::before {
   opacity: 1;
 }
 
@@ -114,30 +114,30 @@ nav li:nth-of-type(5) {
 }
 
 /* Slide in animation with delay for each nav item */
-.slide-in-1{
+.slide-in-1 {
   animation: slide-in 0.4s linear 0.2s both;
 }
 
-.slide-in-2{
+.slide-in-2 {
   animation: slide-in 0.4s linear 0.4s both;
 }
 
-.slide-in-3{
+.slide-in-3 {
   animation: slide-in 0.4s linear 0.6s both;
 }
 
-.slide-in-4{
+.slide-in-4 {
   animation: slide-in 0.4s linear 0.8s both;
 }
 
-.slide-in-5{
+.slide-in-5 {
   animation: slide-in 0.4s linear 1s both;
 }
 
 @keyframes slide-in {
   from {
     transform: translateX(200%);
-  }  
+  }
 
   to {
     transform: translateX(0);
@@ -201,8 +201,8 @@ section#home {
 }
 
 section#home a {
-  position: absolute;
-  z-index: 2;
+  position: fixed;
+  z-index: 12;
   top: 1.5rem;
   right: 1.5rem;
   text-decoration: none;
@@ -232,7 +232,7 @@ section#contact {
 @media (max-width: 600px) {
   section#home a {
     top: 1rem;
-    left: 1rem;
+    right: 1rem;
   }
 
   .menu-bars {
